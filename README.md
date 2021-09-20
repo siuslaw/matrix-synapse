@@ -59,6 +59,19 @@ allow-loopback-peers
 cli-password=CHANGEME
 external-ip=EXTERNALIP
 ```
+
+Then in your synapse config homeserver.yaml you just need to add these following lines:
+```
+turn_uris:
+  - "turn:YOURDOMAIN.COM:3478?transport=udp"
+  - "turn:YOURDOMAIN.COM:3478?transport=tcp"
+  - "turns:YOURDOMAIN.COM:3478?transport=udp"
+  - "turns:YOURDOMAIN.COM:3478?transport=tcp"
+turn_shared_secret: "CHANGEME"
+turn_user_lifetime: 1h
+turn_allow_guests: true
+```
+(make sure you only change YOURDOMAIN.COM)
 #
 ## Enabling your site:
 ``` sudo ln -s /etc/nginx/sites-available/YOUR_DOMAIN /etc/nginx/sites-enabled```

@@ -60,7 +60,7 @@ cli-password=CHANGEME
 external-ip=EXTERNALIP
 ```
 
-Then in your synapse config homeserver.yaml you just need to add these following lines:
+Then in your synapse config ```homeserver.yaml``` you just need to add these following lines:
 ```
 turn_uris:
   - "turn:YOURDOMAIN.COM:3478?transport=udp"

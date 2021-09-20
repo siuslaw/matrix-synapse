@@ -143,7 +143,8 @@ Now you can create users, to create a new admin user on your server:
 
 
 
-
+### WIP:
+(X) automated bash script
 
 
 

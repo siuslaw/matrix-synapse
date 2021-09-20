@@ -120,25 +120,25 @@ Time to restart the synapse: ```sudo systemctl restart matrix-synapse```
 #
 ## Synapse customization:
 
-
+#
 ### Enabling registration:
 ```enable_registration: true```
 
 To be able to create users from your homeserver, you also need to uncomment this line in your matrix config:
 ```registration_shared_secret: CHANGME```
+
 Now you can create users, to create a new admin user on your server:
 ```sudo register_new_matrix_user -u YOUR_USERNAME -p YOUR_PASSWORD -a -c /etc/matrix-synapse/homeserver.yaml```
 
-
-
+#
 ### Federation: (optional)
 ```allow_public_rooms_over_federation: true```
 ```allow_public_rooms_without_auth: true```
-
+#
 ### URL Previews (optional)
 ```url_preview_enabled: true```
 
-
+#
 ## Congrats, now you should have a fully functionating matrix synapse.
 
 

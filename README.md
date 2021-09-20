@@ -139,7 +139,7 @@ Now you can create users, to create a new admin user on your server:
 ```url_preview_enabled: true```
 
 
-# Congrats, now you should have a fully functionating matrix synapse.
+## Congrats, now you should have a fully functionating matrix synapse.
 
 
 
